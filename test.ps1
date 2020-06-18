@@ -6,6 +6,8 @@ $Log = "aa.log"
 
 $score = 0
 
+Write-Host "Testy prawidłowych plików"
+
 Get-ChildItem $Dir -Filter prog??? | 
 Foreach-Object {
     $Prog = $_.FullName
@@ -51,6 +53,28 @@ Foreach-Object {
     {
         Write-Host "Success";
     }
+}
+
+Write-Host "Liczba bledow: " $score
+
+Write-Host "Testy nieprawidłowych plików"
+
+$score = 0
+
+Get-ChildItem $Dir -Filter fprog??? | 
+Foreach-Object {
+    $Prog = $_.FullName
+
+    Write-Host $Prog
+
+    & $Kompilator $Prog > $Log
+    if($lastExitCode -ne 0)
+    {
+        Write-Host "Sukces - program sie nie skompilowal";
+        return;
+    }
+    Write-Host "Blad - program sie skompilowal";
+    $score = $score+1
 }
 
 Write-Host "Liczba bledow: " $score
