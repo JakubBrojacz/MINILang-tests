@@ -1,0 +1,4 @@
+//declaration with assignment
+program {
+int a = 3;
+}

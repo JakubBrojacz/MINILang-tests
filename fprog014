@@ -1,0 +1,4 @@
+//dangling semicolon
+program {
+;
+}

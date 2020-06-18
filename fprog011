@@ -1,0 +1,4 @@
+//escaped quote not ending string
+program {
+write "gt\n\\\";
+}

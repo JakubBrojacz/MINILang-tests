@@ -1,0 +1,5 @@
+//missing / in comment
+program {
+/int x2;
+int error;
+}

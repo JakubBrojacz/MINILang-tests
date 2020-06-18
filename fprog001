@@ -1,4 +1,4 @@
-\\missing program keyword
+//missing program keyword
 {
     int a;
     a = 2;

@@ -1,0 +1,4 @@
+\\comment with wrong slashes
+program {
+int a;
+}

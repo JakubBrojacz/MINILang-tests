@@ -1,0 +1,4 @@
+//id is a reserved word
+program {
+int double;
+}

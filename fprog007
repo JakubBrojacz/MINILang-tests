@@ -1,0 +1,4 @@
+//no block, just code
+int a;
+int b;
+b = a + 2;

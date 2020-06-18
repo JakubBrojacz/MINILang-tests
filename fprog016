@@ -1,0 +1,4 @@
+//another reserved word
+program {
+bool program;
+} 
