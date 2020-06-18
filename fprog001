@@ -1,0 +1,6 @@
+\\missing program keyword
+{
+    int a;
+    a = 2;
+    return;
+}
