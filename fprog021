@@ -1,0 +1,7 @@
+//twice declared 'b' in same scope
+program {
+    int b;
+    int a;
+    double n;
+    bool b;
+}
