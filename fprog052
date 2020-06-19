@@ -1,0 +1,4 @@
+//wrong type in unary expression
+program {
+    ~1.0;
+}

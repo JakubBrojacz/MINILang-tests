@@ -1,0 +1,4 @@
+//double in while condition
+program {
+    while(1.0){}
+}

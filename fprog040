@@ -1,0 +1,4 @@
+//wrong type in relational expression
+program {
+    true == 1.0;
+}

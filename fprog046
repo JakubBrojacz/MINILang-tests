@@ -1,0 +1,4 @@
+//wrong type in */ expression
+program {
+    1.0 * false;
+}

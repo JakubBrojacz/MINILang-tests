@@ -1,0 +1,4 @@
+//int in if-else condition
+program {
+    if(1){}else{}
+}

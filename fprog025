@@ -1,0 +1,4 @@
+//int in while condition
+program {
+    while(1){}
+}

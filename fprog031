@@ -1,0 +1,4 @@
+//expression in read instruction
+program {
+    read 2;
+}

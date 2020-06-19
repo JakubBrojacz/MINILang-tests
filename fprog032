@@ -1,0 +1,5 @@
+//use of non declared variable
+program {
+    int a;
+    write b;
+}

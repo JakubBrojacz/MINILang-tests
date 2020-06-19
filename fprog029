@@ -1,0 +1,4 @@
+//int in if condition
+program {
+    if(1){}
+}

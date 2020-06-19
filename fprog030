@@ -1,0 +1,4 @@
+//double in if condition
+program {
+    if(1.0){}
+}

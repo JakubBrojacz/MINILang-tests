@@ -1,0 +1,4 @@
+//wrong type in logical expression
+program {
+    false && 1;
+}

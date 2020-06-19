@@ -1,0 +1,4 @@
+//wrong type in bitwise expression
+program {
+    true | false;
+}

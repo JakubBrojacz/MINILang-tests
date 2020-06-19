@@ -1,0 +1,4 @@
+//double in if-else condition
+program {
+    if(1.0){}else{}
+}

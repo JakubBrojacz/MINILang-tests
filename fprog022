@@ -1,0 +1,5 @@
+//assigning double to int
+program {
+    int a;
+    a = 4.5;
+} 

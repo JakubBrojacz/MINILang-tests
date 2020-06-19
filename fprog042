@@ -1,0 +1,4 @@
+//wrong type in +- expression
+program {
+    true + false;
+}
