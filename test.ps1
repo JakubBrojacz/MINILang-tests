@@ -17,28 +17,28 @@ Foreach-Object {
     & $Kompilator $Prog > $Log
     if($lastExitCode -ne 0)
     {
-        Write-Host "Program sie nie skompilowal";
+        Write-Host "Program sie nie skompilowal" -ForegroundColor Red;
         $score = $score+1
         return;
     }
     & $Ilasm ($Prog + ".il") >> $Log
     if($lastExitCode -ne 0)
     {
-        Write-Host "Blad w wygenerowanym kodzie";
+        Write-Host "Blad w wygenerowanym kodzie" -ForegroundColor Red;
         $score = $score+1
         return;
     }
     & $Peverify ($Prog + ".exe") >> $Log
     if($lastExitCode -ne 0)
     {
-        Write-Host "Peverify wykrył blad";
+        Write-Host "Peverify wykrył blad" -ForegroundColor Red;
         $score = $score+1
         return;
     }
     Start-Process ($Prog + ".exe") -RedirectStandardInput ($Prog + ".in") -RedirectStandardOutput ($Prog + ".out_real") -NoNewWindow -Wait
     if($lastExitCode -ne 0)
     {
-        Write-Host "Skompilowany program się wyjebał";
+        Write-Host "Skompilowany program się wyjebał" -ForegroundColor Red;
         $score = $score+1
         return;
     }
@@ -46,7 +46,7 @@ Foreach-Object {
     $result = Compare-Object (Get-Content ($Prog + ".out")) (Get-Content ($Prog + ".out_real"))
     if($result -ne $null)
     {
-        Write-Host "Pliki wyjsciowe się nie zgadzaja";
+        Write-Host "Pliki wyjsciowe się nie zgadzaja" -ForegroundColor Red;
         $score = $score+1
     }
     else
@@ -73,7 +73,7 @@ Foreach-Object {
         Write-Host "Sukces - program sie nie skompilowal";
         return;
     }
-    Write-Host "Blad - program sie skompilowal";
+    Write-Host "Blad - program sie skompilowal" -ForegroundColor Red;
     $score = $score+1
 }
 
