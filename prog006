@@ -1,0 +1,14 @@
+// return statement
+program
+{
+    int i;
+    i=4;
+    while(i>0)
+    {
+        write i;
+        write "\n";
+        if(i==2)
+        return;
+        i = i-1;
+    }
+}

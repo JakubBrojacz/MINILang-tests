@@ -59,7 +59,7 @@ Write-Host "Liczba bledow: " $score
 
 Write-Host "Testy nieprawidłowych plików"
 
-$score = 0
+$score1 = 0
 
 Get-ChildItem $Dir -Filter fprog??? | 
 Foreach-Object {
@@ -74,7 +74,10 @@ Foreach-Object {
         return;
     }
     Write-Host "Blad - program sie skompilowal" -ForegroundColor Red;
-    $score = $score+1
+    $score1 = $score1+1
 }
 
-Write-Host "Liczba bledow: " $score
+Write-Host "Liczba bledow: " $score1
+
+$score2 = $score + $score1
+Write-Host "Łącznie błędów" $score2 
