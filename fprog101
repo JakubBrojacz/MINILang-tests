@@ -1,0 +1,5 @@
+//error after return
+program {
+    2+2;
+    ;;
+}

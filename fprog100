@@ -1,0 +1,7 @@
+//error after return
+program {
+    2+2;
+    1+1;
+    return;
+    aaaafasf;
+}
