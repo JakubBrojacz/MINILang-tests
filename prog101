@@ -1,0 +1,14 @@
+//trying to overflow stack
+program
+{
+    int n;
+    while(true){
+        n = n + 1;
+        if(n < 1000000){
+            2 + 2 * (2 - 2) | 100 - 2;
+            23.2 + - (double) (true || (n == 0));
+        } else {
+            return;
+        }
+    }
+}

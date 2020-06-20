@@ -1,0 +1,22 @@
+//L00PS
+program {
+    int i;
+    int j;
+    double d;
+    bool b;
+    while(i < 5) {
+        j = 0;
+        while(j < 5) {
+            if(b = (i == j))
+                write "x";
+            else
+                write "o";
+            j = j + 1;
+            d = d + i * j + (double)b;
+        }
+        write "\n";
+        i = i + 1;
+    }
+    write d * 10 - i * j;
+    write "\n";
+}

@@ -1,0 +1,47 @@
+//if-while correction tests
+program
+{
+    while(false) {
+        write 0;
+        if(false) {
+            {}{}{}{}{}{}{}{} write 1;
+        }
+        if(false) {
+            {}{}{}{}{}{}{}{} write 2;
+        } 
+        else {
+            {}{}{}{}{}{}{}{} write 3;
+        }
+        if(true) {
+            {}{}{}{}{}{}{}{} write 4;
+        }
+        if(true) {
+            {}{}{}{}{}{}{}{} write 5;
+        } 
+        else {
+            {}{}{}{}{}{}{}{} write 6;
+        }
+    }
+    while(true) {
+        write 7;
+        if(true) {
+            {}{}{}{}{}{}{}{} write 8;
+        }
+        if(true) {
+            {}{}{}{}{}{}{}{} write 9;
+        } 
+        else {
+            {}{}{}{}{}{}{}{} write 10;
+        }
+        if(false) {
+            {}{}{}{}{}{}{}{} write 11;
+        }
+        if(false) {
+            {}{}{}{}{}{}{}{} write 12;
+        } 
+        else {
+            {}{}{}{}{}{}{}{} write 13;
+        }
+        return;
+    }
+}
