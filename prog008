@@ -1,0 +1,14 @@
+//test initial values
+
+program
+{
+    int a;
+    double b;
+    bool c;
+    write a;
+    write "\n";
+    write b;
+    write "\n";
+    write c;
+}
+

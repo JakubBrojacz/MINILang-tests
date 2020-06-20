@@ -1,0 +1,36 @@
+﻿// return statement
+program
+{
+    int i;
+    i = 4;
+    if(true)
+    {
+        if(true)
+        {
+            write "a";
+        }
+        else
+        {
+            write "b";
+        }
+        if(false)
+        {
+            write "c";
+        }
+        else
+        {
+            write "d";
+        }
+    }
+    if(true)
+    {
+        while(i>0)
+        {
+            if(i==2)
+                write "e";
+            write "f";
+            i = i-1;
+        }
+    }
+    return;
+}
