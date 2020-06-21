@@ -1,5 +1,0 @@
-//unknown escape sequence
-program {
-write "xd\d";
-}
- 

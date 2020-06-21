@@ -2,6 +2,7 @@
 program
 {
     int n;
+    write "a";
     while(true){
         n = n + 1;
         if(n < 1000000){
