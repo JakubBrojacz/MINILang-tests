@@ -44,6 +44,6 @@ for file in fprog???; do
         continue
     fi
 done
-
+rm $TEMP
 echo $COMPILER
 echo "Error count: ${error}"

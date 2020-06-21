@@ -1,0 +1,22 @@
+//shorthand calculations
+program {
+    int a;
+    int b;
+    int c;
+    int d;
+    int e;
+    a = 1;
+    b = 2;
+    c = 3;
+    d = 4;
+    e = 5;
+    true && ((a = 11)==10) || ((b = 12)==12) && ((c = 13)==13) && ((d = 14)==14) || ((e = 15)==15);
+    // true & false | true & true | true -> true! | true
+    // 11 12 13 14 5
+    write a;
+    write b;
+    write c;
+    write d;
+    write e;
+}
+

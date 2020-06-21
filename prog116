@@ -1,0 +1,5 @@
+//left to right order
+program {
+    write false && true || true;
+    write 0 & 1 | 1;
+}
