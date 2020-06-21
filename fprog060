@@ -1,0 +1,6 @@
+// assigning double to bool
+program
+{
+    bool i;
+    i = 1;
+}

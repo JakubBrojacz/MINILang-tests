@@ -1,0 +1,5 @@
+// int in if
+program
+{
+    if(1){}
+}

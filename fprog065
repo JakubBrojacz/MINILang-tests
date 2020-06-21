@@ -1,0 +1,5 @@
+// assigning int to int
+program
+{
+    1 = 1;
+}

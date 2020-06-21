@@ -1,0 +1,6 @@
+// assigning bool to int
+program
+{
+    int i;
+    i = true;
+}

@@ -1,0 +1,5 @@
+// double in if
+program
+{
+    if(1.0){}
+}

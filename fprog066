@@ -1,0 +1,6 @@
+// case sensitiveness
+program
+{
+   int xxxxx;
+   write xXxXx;
+}

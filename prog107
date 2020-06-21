@@ -1,0 +1,8 @@
+// case sensitiveness
+program
+{
+   int False;
+   False = (int) false * False;
+   write False;
+   write false;
+}

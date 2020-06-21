@@ -1,0 +1,6 @@
+// assigning int to bool
+program
+{
+    bool i;
+    i = 1;
+}
