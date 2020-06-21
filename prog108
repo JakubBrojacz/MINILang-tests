@@ -1,0 +1,12 @@
+// double format
+program
+{
+    double d;
+    int i;
+    while(i < 10) {
+        read d;
+        write d;
+        write "\n";
+        i = i + 1;
+    }
+}

@@ -28,7 +28,9 @@ for file in prog???; do
         continue
     fi
     cat "${file}.in" | mono "${file}.exe" > $TEMP
-    if cmp -s "${file1}.out" "$TEMP"; then
+    if cmp "${file}.out" "$TEMP"; then
+        continue
+    else
         echo "Output of ${file}.exe is not identical"
         ((error=error+1))
     fi
@@ -43,6 +45,5 @@ for file in fprog???; do
     fi
 done
 
-rm $TEMP
 echo $COMPILER
 echo "Error count: ${error}"
