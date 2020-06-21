@@ -10,6 +10,7 @@ program
     bool aaa;
     bool bbb;
     bool ccc;
+    write "a";
     while(aaa) {
         read a;
         read aa;

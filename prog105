@@ -4,6 +4,7 @@ program
     int i;
     double d;
     bool b;
+    write "a";
     i = 1;
     d = 1;
     d = 1.0;
