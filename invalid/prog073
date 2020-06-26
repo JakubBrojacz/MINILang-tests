@@ -1,0 +1,5 @@
+//double scientific notation
+program {
+    double d;
+    d = 1e4;
+}

@@ -2,5 +2,6 @@
 *.exe
 *.out_real
 *.log
+*.diff
 log
 temp.out

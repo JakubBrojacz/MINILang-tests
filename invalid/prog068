@@ -1,0 +1,5 @@
+//double trailing zeroes
+program {
+    double d;
+    d = 00.0;
+}

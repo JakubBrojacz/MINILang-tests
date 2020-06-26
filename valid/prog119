@@ -1,0 +1,12 @@
+//cil keywords
+program {
+    double pop;
+    int int32;
+    int int3;
+    double div;
+    bool int8;
+    int add;
+    add = int32 + (int)pop;
+    if(div == add) write "a";
+    else write "b";
+}

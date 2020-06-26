@@ -1,0 +1,24 @@
+//complex program
+program {
+    double d;
+    int n;
+    int i;
+    bool b;
+    d = 0.0002;
+    while(i <= 100000) {
+        write "a";
+        if (d <= 0) {
+            write "b";
+        }
+        d = (double) 10000 / 13 + ((i = n * 69 + 50) | 100 - (n = i / 3 - i)) * 69;
+        while (n < d) {
+            n = n * 2;
+            n = n - 10000;
+            if(n <= 0) {
+                write "c";
+            } else {
+                write "d";
+            }
+        }
+    }
+}
