@@ -1,4 +1,4 @@
-//shorthand calculations
+// shorthand calculations 8
 program {
     int a;
     int b;

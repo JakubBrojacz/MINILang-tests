@@ -1,4 +1,4 @@
-//trying to overflow stack
+// trying to overflow stack
 program
 {
     int n;

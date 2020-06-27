@@ -1,3 +1,4 @@
+// simple string
 program
 {
     write "\\";

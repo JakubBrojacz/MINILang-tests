@@ -1,3 +1,4 @@
+//simple read/write
 program
 {
     int a;
