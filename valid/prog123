@@ -1,0 +1,17 @@
+// fake comment inside string
+program {
+write
+"\// fake"
+;
+write
+"//\" fake"
+;
+write
+//\" serious"
+"normal"
+;
+write
+//"very serious"
+"also normal\n"
+;
+}

@@ -1,0 +1,5 @@
+// bad comment
+program {
+/
+/ no comment
+}
