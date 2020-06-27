@@ -1,4 +1,4 @@
-//if-while correction tests
+//if-while correctness tests
 program
 {
     while(false) {
