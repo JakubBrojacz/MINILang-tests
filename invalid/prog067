@@ -1,0 +1,5 @@
+//identifier starts with a number
+program {
+    int 1a;
+    1a = 1a;
+}

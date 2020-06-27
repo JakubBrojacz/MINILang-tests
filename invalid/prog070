@@ -1,0 +1,5 @@
+//double missing fraction part
+program {
+    double d;
+    d = 0.;
+}

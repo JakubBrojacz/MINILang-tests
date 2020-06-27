@@ -1,0 +1,5 @@
+//double two dots
+program {
+    double d;
+    d = 0..0;
+}

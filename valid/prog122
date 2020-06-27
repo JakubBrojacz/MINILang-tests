@@ -1,0 +1,16 @@
+// messy code
+program {
+    write 4
+    / 2;
+    write 
+    2
+    +
+    4
+    /
+    2
+    -
+    8
+    ;
+    write
+    "\n"
+;}
