@@ -1,0 +1,9 @@
+// empty while, if
+program {
+    if(false) {}
+    if(true) {}
+    while(false) {}
+    if(true) {} else {}
+    if(false) {} else {}
+    write "a";
+}
