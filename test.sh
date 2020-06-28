@@ -22,32 +22,33 @@
 
 COMPILER="/home/tomasz/Workspace/C#/MiniCompiler/MiniCompiler/bin/Debug/MiniCompiler.exe"
 LOG="./test.log"
+ERROR_LOG="./error.log"
 TEMP="./temp.out"
 VALID_DIR="./valid/"
 INVALID_DIR="./invalid/"
 
 error=0
 
-date > "${LOG}"
+date | tee "${LOG}" > "${ERROR_LOG}"
 
 echo "***Valid programs test***"
 for file in "${VALID_DIR}"prog???; do
     head -n1 "${file}"
     mono "${COMPILER}" "${file}" >> "${LOG}"
     if [ $? -ne 0 ]; then
-        echo "Error couldn't compile ${file} to il"
+        echo "Error couldn't compile ${file} to il" | tee -a "${ERROR_LOG}"
         ((error=error+1))
         continue
     fi
-    ilasm "${file}.il" >> "${LOG}"
+    ilasm "${file}.il" >> "${LOG}" 2>> "${ERROR_LOG}"
     if [ $? -ne 0 ]; then
-        echo "Error couldn't compile ${file}.il to exe"
+        echo "Error couldn't compile ${file}.il to exe" | tee -a "${ERROR_LOG}"
         ((error=error+1))
         continue
     fi
-    peverify "${file}.exe" >> "${LOG}"
-    if [ $? -ne 0 ]; then
-        echo "Error ${file}.exe contains problems"
+    peverify "${file}.exe" | tee -a "${LOG}" "${ERROR_LOG}"
+    if [ ${PIPESTATUS[0]} -ne 0 ]; then
+        echo "Error ${file}.exe contains problems" | tee -a "${ERROR_LOG}"
         ((error=error+1))
         continue
     fi
@@ -55,7 +56,7 @@ for file in "${VALID_DIR}"prog???; do
     if cmp "${file}.out" "${TEMP}"; then
         echo "OK"
     else
-        echo "Output of ${file}.exe is not identical. See ${file}.diff for details."
+        echo "Output of ${file}.exe is not identical. See ${file}.diff for details." | tee -a "${ERROR_LOG}"
         diff "${file}.out" "${TEMP}" > "${file}.diff"
         ((error=error+1))
     fi
@@ -66,7 +67,7 @@ for file in "${INVALID_DIR}"prog???; do
     head -n1 "${file}"
     mono "$COMPILER" "${file}" >> "${LOG}"
     if [ $? -eq 0 ]; then
-        echo "Program ${file} compiled, while failure was expected"
+        echo "Program ${file} compiled, while failure was expected" | tee -a "${ERROR_LOG}"
         ((error=error+1))
         continue
     else
@@ -76,4 +77,4 @@ done
 
 rm "${TEMP}"
 echo "${COMPILER}"
-echo "Error count: ${error}"
+echo "Total error count: ${error}" | tee -a "${ERROR_LOG}"
