@@ -39,7 +39,7 @@ for file in "${VALID_DIR}"prog???; do
         ((error=error+1))
         continue
     fi
-    ilasm /exe "${file}.il" >> "${LOG}"
+    ilasm "${file}.il" >> "${LOG}"
     if [ $? -ne 0 ]; then
         echo "Error couldn't compile ${file}.il to exe"
         ((error=error+1))
