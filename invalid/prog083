@@ -1,0 +1,7 @@
+// chain assigning double to int
+program
+{
+  int int32;
+  double float64;
+  int32 = float64 = 5;
+}

@@ -1,0 +1,15 @@
+// whitespaces in cast operator
+program {
+    double a;
+    a = ( double)3.5;
+    a = (double )3.5;
+    a = (   double)3.5;
+    a = (
+    double
+    )3.5;
+    a = (    
+    double 
+    
+    )3.5;
+    write a;
+}
